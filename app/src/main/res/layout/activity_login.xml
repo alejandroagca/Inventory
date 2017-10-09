@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Inventory.LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/lly_login_padding">
+    <TextView
+        android:id="@+id/txtSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/txtSignIn_margin"
+        android:text="@string/txtSignIn"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edtUser"
+        android:text="@string/txtUser"
+        android:textAppearance="@android:style/TextAppearance.Small" />
+
+    <EditText
+        android:id="@+id/edtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="@dimen/edtUser_margin"
+        android:background="@drawable/shape_edittext"
+        style="@style/LoginEditText"
+        />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edtPassword"
+        android:text="@string/txtPassword"
+        android:textAppearance="@android:style/TextAppearance.Small" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/shape_edittext"
+        style="@style/LoginEditText"
+        />
+
+    <LinearLayout
+        android:id="@+id/llySignInOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/lly_sign_options_padding"
+        >
+
+        <CheckBox
+            android:id="@+id/chkRemember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="@string/chkRemember"
+            style="@style/LoginCheckBox"
+            />
+
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@string/btnSignUp"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        style="@style/Widget.Button.Transparent"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/btnSignIn_margin"
+        android:background="@color/colorFacebook"
+        android:text="@string/btnSignIn" />
+
+    <Button
+        android:id="@+id/btnGoogleSignIn"
+        style="@style/Widget.Button.Transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGoogle"
+        android:drawableStart="@drawable/ic_google"
+        android:text="@string/btnGoogleSignIn"
+        />
+
+    <Button
+        android:id="@+id/btnFacebookSignIn"
+        style="@style/Widget.Button.Transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFacebook"
+        android:drawableStart="@drawable/ic_facebook"
+        android:text="@string/btnFacebookSignIn" />
+
+</LinearLayout>
+    <!--Cuidado al aplicar el margen en un estilo en la etique porque se redibuja el componente lo que sobrecarga el layout-->
+

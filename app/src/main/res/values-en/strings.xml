@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LoginLinearLayout</string>
+    <string name="txtSignIn">Sign In</string>
+    <string name="txtUser">User name / email address</string>
+    <string name="txtPassword">Password</string>
+    <string name="btnFacebookSignIn">Login in with Facebook</string>
+    <string name="btnGoogleSignIn">Google</string>
+    <string name="btnSignIn">Sign In</string>
+    <string name="btnSignUp"><u>Sign Up</u></string>
+    <string name="chkRemember">Remember me</string>
+</resources>
