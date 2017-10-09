@@ -67,7 +67,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.8"
             android:text="@string/chkRemember"
-            style="@style/LoginCheckBox"
+            android:theme="@style/LoginCheckBoxFondo"
+            style="@style/LoginCheckBoxApariencia"
             />
 
         <TextView
