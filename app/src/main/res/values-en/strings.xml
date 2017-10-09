@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">LoginLinearLayout</string>
+    <string name="app_name">Inventory</string>
     <string name="txtSignIn">Sign In</string>
     <string name="txtUser">User name / email address</string>
     <string name="txtPassword">Password</string>
@@ -9,4 +9,8 @@
     <string name="btnSignIn">Sign In</string>
     <string name="btnSignUp"><u>Sign Up</u></string>
     <string name="chkRemember">Remember me</string>
+    <string name="txvName">Name</string>
+    <string name="txvDescription">Description</string>
+    <string name="btnChange">Change state</string>
+    <string name="txvCreationDate">Creation date</string>
 </resources>

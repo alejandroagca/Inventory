@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LoginLinearLayout</string>
+    <string name="app_name">Inventory</string>
     <string name="txtSignIn">Acceder</string>
     <string name="txtUser">Nombre de usuario / correo electronico</string>
     <string name="txtPassword">Contraseña</string>
@@ -8,4 +8,8 @@
     <string name="btnSignUp"><u>Registro</u></string>
     <string name="chkRemember">Recordar usuario</string>
     <string name="btnSignIn">Acceder</string>
+    <string name="txvName">Nombre</string>
+    <string name="txvDescription">Descripcion</string>
+    <string name="btnChange">Cambiar estado</string>
+    <string name="txvCreationDate">Fecha de creacion</string>
 </resources>
