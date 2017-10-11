@@ -12,7 +12,7 @@
         <activity android:name=".SplashActivity" />
         <activity android:name=".LoginActivity"></activity>
         <activity
-            android:name=".InventoryActivity"
+            android:name=".DashBoardActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
             >
         </activity>
-        <activity android:name=".DashBoardActivity"></activity>
+        <activity android:name=".InventoryActivity"></activity>
     </application>
 
 </manifest>
