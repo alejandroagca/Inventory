@@ -9,8 +9,4 @@
     <string name="btnSignIn">Sign In</string>
     <string name="btnSignUp"><u>Sign Up</u></string>
     <string name="chkRemember">Remember me</string>
-    <string name="txvName">Name</string>
-    <string name="txvDescription">Description</string>
-    <string name="btnChange">Change state</string>
-    <string name="txvCreationDate">Creation date</string>
 </resources>

@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SplashActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".DashBoardActivity"></activity>
         <activity
-            android:name=".DashBoardActivity"
+            android:name=".LoginActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
             >
         </activity>
-        <activity android:name=".InventoryActivity"></activity>
+        <activity android:name=".ProductActivity"></activity>
     </application>
 
 </manifest>

@@ -8,8 +8,26 @@
     <string name="btnSignUp"><u>Registro</u></string>
     <string name="chkRemember">Recordar usuario</string>
     <string name="btnSignIn">Acceder</string>
-    <string name="txvName">Nombre</string>
-    <string name="txvDescription">Descripcion</string>
-    <string name="btnChange">Cambiar estado</string>
-    <string name="txvCreationDate">Fecha de creacion</string>
+    <string name="txvName">Nombre:</string>
+    <string name="txvDescription">Descripción:</string>
+    <string name="txvDateCreation">Fecha Creación:</string>
+    <string name="btnChange">Cambiar Estado</string>
+    <string name="txvSerial">Serial:</string>
+    <string name="txvSeller">Vendedor:</string>
+    <string name="txvModel">Modelo:</string>
+    <string name="txvCategory">Categoría:</string>
+    <string name="txvSubcategory">Subcategoría:</string>
+    <string name="txvType">Tipo:</string>
+    <string name="txvPrice">Precio:</string>
+    <string name="txvUrl">Url:</string>
+    <string name="txvNotes">Notas:</string>
+    <string-array name="spnCategory">
+        <item>Periférico</item>
+    </string-array>
+    <string-array name="spnSubcategory">
+        <item>Monitor</item>
+    </string-array>
+    <string-array name="spnType">
+        <item>Inventariable</item>
+    </string-array>
 </resources>

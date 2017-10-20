@@ -6,6 +6,6 @@
     <dimen name="lly_sign_options_padding">8dp</dimen>
     <dimen name="edtUser_margin">8dp</dimen>
     <dimen name="imgDashBoardWidth">0dp</dimen>
-    <dimen name="imgDashBoardHeight">0dp</dimen>
+    <dimen name="imgDashBoardHeigth">0dp</dimen>
 
 </resources>

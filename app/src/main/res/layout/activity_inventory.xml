@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.inventory.InventoryActivity"
+    tools:context="com.example.inventory.ProductActivity"
     android:stretchColumns="1">
     <TableRow
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
         <TextView android:id="@+id/txvCreationDate"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/txvCreationDate"
+            android:text="@string/txvDateCreation"
             />
         <EditText
             android:id="@+id/edtCreationDate"
