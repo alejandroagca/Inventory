@@ -9,4 +9,26 @@
     <string name="btnSignIn">Sign In</string>
     <string name="btnSignUp"><u>Sign Up</u></string>
     <string name="chkRemember">Remember me</string>
+    <string name="txvName">Name:</string>
+    <string name="txvDescription">Description:</string>
+    <string name="txvDateCreation">Date Creation:</string>
+    <string name="btnChange">Change State</string>
+    <string name="txvSerial">Serial:</string>
+    <string name="txvSeller">Seller:</string>
+    <string name="txvModel">Model:</string>
+    <string name="txvCategory">Category:</string>
+    <string name="txvSubcategory">Subcategoty:</string>
+    <string name="txvType">Type:</string>
+    <string name="txvPrice">Price:</string>
+    <string name="txvUrl">Url:</string>
+    <string name="txvNotes">Notas:</string>
+    <string-array name="spnCategory">
+        <item>Category</item>
+    </string-array>
+    <string-array name="spnSubcategory">
+        <item>SubCateogory</item>
+    </string-array>
+    <string-array name="spnType">
+        <item>SubType</item>
+    </string-array>
 </resources>

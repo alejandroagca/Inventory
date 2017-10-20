@@ -22,12 +22,12 @@
     <string name="txvUrl">Url:</string>
     <string name="txvNotes">Notas:</string>
     <string-array name="spnCategory">
-        <item>Periférico</item>
+        <item>Categoria</item>
     </string-array>
     <string-array name="spnSubcategory">
-        <item>Monitor</item>
+        <item>SubCategoría</item>
     </string-array>
     <string-array name="spnType">
-        <item>Inventariable</item>
+        <item>Tipo</item>
     </string-array>
 </resources>

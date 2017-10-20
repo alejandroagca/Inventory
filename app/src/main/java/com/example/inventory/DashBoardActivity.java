@@ -16,6 +16,7 @@ public class DashBoardActivity extends AppCompatActivity {
 
     private GridLayout gridDashBoard;
     private ClickListenerDashBoard listenerDashboard = new ClickListenerDashBoard();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +24,7 @@ public class DashBoardActivity extends AppCompatActivity {
         gridDashBoard = (GridLayout) findViewById(R.id.gridDashBoard);
         //Definir un array de int qu contendra el id de las imagenes
 
-        int [] images = {R.drawable.closet, R.drawable.chair, R.drawable.cpu, R.drawable.inventory,
-                R.drawable.keyboard, R.drawable.monitor, R.drawable.mouse, R.drawable.printer,
-                R.drawable.proyector, R.drawable.table, R.drawable.whiteboard};
+        int[] images = {R.drawable.inventory, R.drawable.monitor, R.drawable.seccion, R.drawable.dependencias, R.drawable.preferencias};
 
         //No se utiliza en java array de objetos. Se utiliza vector o coleccion.
         //ImageView [] imageViews = new ImageView[images.length];
@@ -41,17 +40,17 @@ public class DashBoardActivity extends AppCompatActivity {
         ImageView imageView;
         float width = getResources().getDimension(R.dimen.imgDashBoardWidth);
         float heigth = getResources().getDimension(R.dimen.imgDashBoardHeigth);
-        for (int   i = 0; i < images.length; i++) {
+        for (int i = 0; i < images.length; i++) {
             imageView = new ImageView(this);
+            imageView.setId((images[i]));
             imageView.setImageResource(images[i]);
-            imageView.setId(images[3]);
-            imageView.setOnClickListener(listenerDashboard);
             GridLayout.LayoutParams params = new GridLayout.LayoutParams();
             params.width = (int) width;
             params.height = (int) heigth;
-            imageView.setLayoutParams(params);
             params.rowSpec = GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f);
             params.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f);
+            imageView.setLayoutParams(params);
+            imageView.setOnClickListener(listenerDashboard);
             gridDashBoard.addView(imageView);
         }
 
@@ -67,20 +66,21 @@ public class DashBoardActivity extends AppCompatActivity {
          }
          */
     }
-    class ClickListenerDashBoard implements View.OnClickListener{
+
+    class ClickListenerDashBoard implements View.OnClickListener {
         @Override
-        public void onClick(View view) {
+        public void onClick(View v) {
             Intent intent = null;
-            switch (view.getId()){
+            switch (v.getId()) {
                 case R.drawable.inventory:
-                    intent = new Intent(DashBoardActivity.this, ProductActivity.class);
-                    Bundle bundle = new Bundle();
+                    intent = new Intent(DashBoardActivity.this, InventoryActivity.class);
+                    startActivity(intent);
                     break;
-                /*case R.drawable.product:
-                    intent = new Intent(DashboardActivity.this, ProductActivity.class);
-                    break;*/
+                case R.drawable.monitor:
+                    intent = new Intent(DashBoardActivity.this, ProductActivity.class);
+                    startActivity(intent);
+                    break;
             }
-            startActivity(intent);
         }
     }
 }
