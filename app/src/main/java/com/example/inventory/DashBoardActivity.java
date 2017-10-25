@@ -16,6 +16,10 @@ public class DashBoardActivity extends AppCompatActivity {
 
     private GridLayout gridDashBoard;
     private ClickListenerDashBoard listenerDashboard = new ClickListenerDashBoard();
+    private static int INVENTORY;
+    private static int PRODUCT;
+    private static int DEPENDENCY;
+    int[] images = {R.drawable.inventory, R.drawable.monitor, R.drawable.dependencias};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +28,6 @@ public class DashBoardActivity extends AppCompatActivity {
         gridDashBoard = (GridLayout) findViewById(R.id.gridDashBoard);
         //Definir un array de int qu contendra el id de las imagenes
 
-        int[] images = {R.drawable.inventory, R.drawable.monitor, R.drawable.seccion, R.drawable.dependencias, R.drawable.preferencias};
 
         //No se utiliza en java array de objetos. Se utiliza vector o coleccion.
         //ImageView [] imageViews = new ImageView[images.length];
@@ -67,6 +70,17 @@ public class DashBoardActivity extends AppCompatActivity {
          */
     }
 
+    /*private void GenerateID (int i, ImageView ImageView)
+    {
+        switch (images[i])
+        {
+            case R.drawable.inventory:
+
+        }
+    }*/
+
+
+
     class ClickListenerDashBoard implements View.OnClickListener {
         @Override
         public void onClick(View v) {
@@ -78,6 +92,10 @@ public class DashBoardActivity extends AppCompatActivity {
                     break;
                 case R.drawable.monitor:
                     intent = new Intent(DashBoardActivity.this, ProductActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.drawable.dependencias:
+                    intent = new Intent(DashBoardActivity.this, DependencyActivity.class);
                     startActivity(intent);
                     break;
             }
